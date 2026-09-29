@@ -1,0 +1,129 @@
+.page-content {
+  padding: 24px;
+}
+
+.connection-hero {
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid alpha(@borders, 0.85);
+  background-color: @card_bg_color;
+  box-shadow: 0 8px 24px alpha(black, 0.10);
+}
+
+.connection-hero.state-connected {
+  border-color: alpha(@success_color, 0.55);
+  background-image: linear-gradient(135deg, alpha(@success_bg_color, 0.18), @card_bg_color 72%);
+}
+
+.connection-hero.state-warning {
+  border-color: alpha(@warning_color, 0.62);
+  background-image: linear-gradient(135deg, alpha(@warning_bg_color, 0.20), @card_bg_color 72%);
+}
+
+.connection-hero.state-stopped {
+  border-color: alpha(@borders, 0.95);
+  background-image: linear-gradient(135deg, alpha(@window_fg_color, 0.06), @card_bg_color 72%);
+}
+
+.connection-hero.state-unknown {
+  border-color: alpha(@error_color, 0.42);
+  background-image: linear-gradient(135deg, alpha(@error_bg_color, 0.13), @card_bg_color 72%);
+}
+
+.status-icon {
+  padding: 12px;
+  border-radius: 16px;
+  background-color: alpha(@window_fg_color, 0.08);
+}
+
+.hero-title {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  color: alpha(@window_fg_color, 0.68);
+  font-size: 14px;
+}
+
+.status-pill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.status-pill.success {
+  color: @success_fg_color;
+  background-color: @success_bg_color;
+}
+
+.status-pill.warning {
+  color: @warning_fg_color;
+  background-color: @warning_bg_color;
+}
+
+.status-pill.error {
+  color: @error_fg_color;
+  background-color: @error_bg_color;
+}
+
+.status-pill.neutral {
+  color: @window_fg_color;
+  background-color: alpha(@window_fg_color, 0.10);
+}
+
+button.chip,
+.chip-label {
+  min-height: 24px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background-color: alpha(@window_fg_color, 0.08);
+}
+
+button.chip {
+  border: 0;
+  box-shadow: none;
+}
+
+button.chip:hover {
+  background-color: alpha(@accent_bg_color, 0.20);
+}
+
+.node-badge {
+  min-height: 18px;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.current-badge {
+  color: @success_color;
+  background-color: alpha(@success_bg_color, 0.14);
+  border: 1px solid alpha(@success_color, 0.38);
+}
+
+.offline-badge {
+  color: @error_color;
+  background-color: alpha(@error_bg_color, 0.11);
+  border: 1px solid alpha(@error_color, 0.26);
+}
+
+.apply-bar {
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid alpha(@borders, 0.80);
+  background-color: @card_bg_color;
+}
+
+.bottom-actionbar {
+  padding: 10px 18px;
+  border-top: 1px solid alpha(@borders, 0.72);
+  background-color: alpha(@window_bg_color, 0.96);
+}
+
+banner.warning {
+  background-color: alpha(@warning_bg_color, 0.24);
+}

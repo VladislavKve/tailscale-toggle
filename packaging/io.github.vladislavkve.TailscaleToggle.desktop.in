@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tailscale Toggle
+Name[ru]=Tailscale Toggle
+Comment=Unofficial Tailscale and exit node controller
+Comment[ru]=Неофициальное управление Tailscale и exit node
+Exec="@APP_DIR@/run.sh"
+TryExec="@APP_DIR@/run.sh"
+Icon=tailscale-toggle
+Terminal=false
+Categories=Network;
+Keywords=Tailscale;VPN;Exit Node;Tailnet;
+StartupNotify=true
+StartupWMClass=io.github.vladislavkve.TailscaleToggle
+X-GNOME-UsesNotifications=true
+X-GNOME-SingleWindow=true

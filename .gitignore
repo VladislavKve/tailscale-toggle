@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+assets/_tray_runtime.png
+.pytest_cache/
+.mypy_cache/
+*.log
+build/
+dist/
+*.egg-info/
+.coverage
